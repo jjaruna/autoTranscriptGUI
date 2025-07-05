@@ -1,1 +1,1 @@
-# autoTranscriptGUI
+# AutoTranscriptGUI
