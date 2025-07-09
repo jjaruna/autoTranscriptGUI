@@ -3,6 +3,7 @@
 **AutoTranscript** is a powerful, GPU-accelerated subtitle generator built on top of OpenAI's Whisper model. It features both a **command-line interface (CLI)** and a beautiful **CustomTkinter-based GUI** for users who prefer a graphical workflow.
 
 Supports:
+- Languages such as: English, Chinese, Japanese, Korean.
 - Local audio/video files
 - Subtitle translation to English
 - OpenAI API (for higher quality translations)
