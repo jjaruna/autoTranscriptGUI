@@ -54,7 +54,7 @@ python AutoTranscriptGUI.py
 ```
 ### 🔍 Whisper Model Comparison Summary
 
-| Model               | VRAM (Min)    | ⚙️ Performance        | 🎯 Use Case                                               | 🌐 Translate EN English |
+| Model               | VRAM (Min)    | ⚙️ Performance        | 🎯 Use Case                                               | 🌐 Translate into English |
 |--------------------|---------------|------------------------|-----------------------------------------------------------|--------------------------|
 | `tiny`             | ≥ 1 GB        | ⚡ Very Fast            | Quick tests, low-resource devices                         | ✅                        |
 | `base`             | ≥ 2 GB        | ⚡ Fast                 | Simple transcriptions, short audio                        | ✅                        |
