@@ -15,7 +15,6 @@ Supports:
 - 📜 Generate `.srt` subtitle files from media files
 - 🌍 Supports multilingual transcription and optional **translation to English**
 - 🧠 Uses [Faster-Whisper](https://github.com/guillaumekln/faster-whisper) for fast GPU-accelerated transcription
-- 🔁 Automatic model selection based on VRAM (e.g. `large-v3`, `medium`, etc.)
 - 🔐 API key manager for OpenAI GPT models
 
 ---
@@ -31,9 +30,11 @@ Supports:
 - Python 3.8+
 - ffmpeg (must be installed)
 - NVIDIA GPU with CUDA (recommended)
-- Whisper models (via Faster-Whisper)
 - PyTorch with CUDA
-- `.env` file for OpenAI (optional)
+
+## Requirements for Releases 
+
+ - The rar file contains everything you need to get started without having to install anything.
 
 ---
 
@@ -51,18 +52,19 @@ pip install -r requirements.txt
 ```bash
 python AutoTranscriptGUI.py
 ```
-### Whisper Model Comparison
+### 🔍 Whisper Model Comparison Summary
 
-| Model        | Recommended VRAM | Performance       | Use Case                                               |
-|--------------|------------------|-------------------|---------------------------------------------------------|
-| `tiny`       | ≥ 1 GB           | Very fast, low accuracy | Quick tests, very low-resource machines                  |
-| `base`       | ≥ 2 GB           | Fast, low-medium accuracy | Basic transcriptions, short files                        |
-| `small`      | ≥ 4 GB           | Balanced speed/accuracy | Good for medium-length files, better accuracy            |
-| `medium`     | ≥ 8 GB           | Slower, higher accuracy | Longer files, good balance of quality and performance    |
-| `large-v1`   | ≥ 10 GB          | High accuracy     | Older large model, still very capable                   |
-| `large-v2`   | ≥ 10 GB          | Improved accuracy | More robust than v1, slower on limited VRAM             |
-| `large-v3`   | ≥ 12 GB          | Latest model, high accuracy | Best offline model for quality transcription         |
-| `large-v3-turbo` | ≥ 12 GB      | Fastest large model | High speed with high accuracy, better multi-language support |
+| Model               | VRAM (Min)    | ⚙️ Performance        | 🎯 Use Case                                               | 🌐 Translate EN English |
+|--------------------|---------------|------------------------|-----------------------------------------------------------|--------------------------|
+| `tiny`             | ≥ 1 GB        | ⚡ Very Fast            | Quick tests, low-resource devices                         | ✅                        |
+| `base`             | ≥ 2 GB        | ⚡ Fast                 | Simple transcriptions, short audio                        | ✅                        |
+| `small`            | ≥ 4 GB        | ⚖️ Balanced            | Decent accuracy and speed for general use                | ✅                        |
+| `medium`           | ≥ 8 GB        | 🕒 Slower              | High-quality results for longer files                    | ✅                        |
+| `large-v1`         | ≥ 10 GB       | 🐢 Slower              | Older but still strong performer                         | ✅                        |
+| `large-v2`         | ≥ 10 GB       | 🐢 Slower              | More robust, especially with noisy inputs                | ✅                        |
+| `large-v3`         | ≥ 12 GB       | 🐌 Slowest             | Highest accuracy offline, latest version                 | ✅                        |
+| `large-v3-turbo`   | ≥ 8–10 GB     | ⚡ Fastest             | High-speed, high-accuracy, great multilingual support     | ❌                        |
+
 
 # 🧠 Recommendation
 
