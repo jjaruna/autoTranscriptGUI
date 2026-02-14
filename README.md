@@ -21,8 +21,9 @@ Supports:
 ---
 ## YOUTUBE TUTORIAL IN SPANISH
 
-cooking
+(https://www.youtube.com/watch?v=dB6D1i1BjXc)
 
+---
 ## 📸 GUI Preview
 
 > ![image](https://github.com/user-attachments/assets/d328dff2-4d82-485c-95b8-162405a3e856)
@@ -35,6 +36,7 @@ cooking
 - NVIDIA GPU with CUDA (recommended)
 - Visual C++ Redistributable 14
 
+---
 ## Installation for Releases 
 
  - Extract the .rar file.
