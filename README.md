@@ -6,7 +6,7 @@ Supports:
 - Languages such as: English, Chinese, Japanese, Korean.
 - Local audio/video files
 - Subtitle translation to English
-- OpenAI API (for higher quality translations)
+- OpenAI API (for higher quality translations) NOT AVAILABLE 
 
 ---
 
@@ -19,6 +19,9 @@ Supports:
 - 🔐 API key manager for OpenAI GPT models
 
 ---
+## YOUTUBE TUTORIAL IN SPANISH
+
+
 
 ## 📸 GUI Preview
 
@@ -29,7 +32,6 @@ Supports:
 ## 🧩 Requirements
 
 - Python 3.8+
-- ffmpeg (must be installed)
 - NVIDIA GPU with CUDA (recommended)
 - PyTorch with CUDA
 
@@ -77,16 +79,6 @@ After testing the `large-v3-turbo` model more than 10 times, I can confidently s
 
 ---
 
-## ⚙️ OpenAI API Setup (Optional)
-
-To enable OpenAI-powered translation:
-
-1. Click **"Add API Key"** in the GUI
-2. Enter your OpenAI key and model (`gpt-4`, `gpt-3.5-turbo`, etc.)
-3. It will be saved to `.env` file automatically
-
----
-
 ## 🖥️ CLI Mode (Optional)
 
 You can still use the command-line version via `autosub.py`:
@@ -122,9 +114,7 @@ python autosub.py myvideo.mp4 -l ja --translate --model base
 2. Select video/audio file
 3. Choose language and Whisper model
 4. (Optional) Enable "Translate to English"
-5. (Optional) Enable "Use OpenAI"
-6. Click **Start Transcription**
-7. Wait for progress bar and logs to finish
+5. Click **Start Transcription**
 
 ---
 
