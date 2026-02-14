@@ -21,7 +21,7 @@ Supports:
 ---
 ## YOUTUBE TUTORIAL IN SPANISH
 
-cocking
+cooking
 
 ## 📸 GUI Preview
 
