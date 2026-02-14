@@ -31,14 +31,17 @@ cooking
 
 ## 🧩 Requirements
 
-- Python 3.8+
+- Python 
 - NVIDIA GPU with CUDA (recommended)
-- PyTorch with CUDA
+- Visual C++ Redistributable 14
 
-## Requirements for Releases 
+## Installation for Releases 
 
- - The rar file contains everything you need to get started without having to install anything.
-
+ - Extract the .rar file.
+ - Go to the app folder.
+ - At the top of the path bar, type cmd.
+ - In the console, type: pip install -r requirements.txt.
+ - Go back to the .bat file and run it.
 ---
 
 ## 📦 Installation
