@@ -4,24 +4,24 @@
 
 Supports:
 - Languages such as: English, Chinese, Japanese, Korean.
-- Local audio/video files
-- Subtitle translation to English
+- Local audio/video files.
+- Translate or transcribe YouTube videos using only the link.
+- Subtitle translation to English.
 - OpenAI API (for higher quality translations) NOT AVAILABLE 
 
 ---
 
 ## ✨ Features
 
-- 🖥️ Full-featured **GUI with progress tracking**, real-time logs, and OpenAI config
+- 🖥️ Full-featured **GUI with progress tracking**, real-time logs.
 - 📜 Generate `.srt` subtitle files from media files
 - 🌍 Supports multilingual transcription and optional **translation to English**
 - 🧠 Uses [Faster-Whisper](https://github.com/guillaumekln/faster-whisper) for fast GPU-accelerated transcription
-- 🔐 API key manager for OpenAI GPT models
 
 ---
 ## YOUTUBE TUTORIAL IN SPANISH
 
-
+cocking
 
 ## 📸 GUI Preview
 
