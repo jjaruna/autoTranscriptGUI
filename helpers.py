@@ -23,8 +23,14 @@ def extract_audio(infile:str, overwrite:bool=True, silent:bool=True, channels:in
         if not audio_stream:
             raise ValueError("No audio stream found in the input file.")
 
-        # Get duration of audio file
-        audio_duration = float(audio_stream.duration * audio_stream.time_base)
+        # Get duration of audio file safely
+        if audio_stream.duration is not None:
+            audio_duration = float(audio_stream.duration * audio_stream.time_base)
+        elif container.duration is not None:
+            audio_duration = float(container.duration / av.time_base)
+        else:
+            audio_duration = 0.0
+
 
         # Open a wave file for output
         with wave.open(outfile, 'wb') as wav_file:
