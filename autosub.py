@@ -136,15 +136,21 @@ if __name__ == "__main__":
     for segment in segments:
         if info.language in ["ja"] and not args.translate:
             segment.text = segment.text.replace(" ", "")  # Remove additional spaces
-        print(f"    {segment.start} --> {segment.end} {segment.text}")
-        if prev_segment == segment.text:
+        
+        text = " ".join(segment.text.strip().split()) # NEW
+        print(f"    {segment.start} --> {segment.end} {text}")
+        
+        if prev_segment == text:
             count_duplicates += 1
         else:
             count_duplicates = 0
-        if count_duplicates > 3:
-            print("    Whisper hallucinating with too many duplicates")
-            sys.exit(-1)
-        prev_segment = segment.text
+        
+        if count_duplicates > 10:
+            print("Possible hallucination detected. Skipping segment.")
+            continue
+    
+        prev_segment = text
+        segment.text = text  # CLEAN VERSION
         #if WORD_TIMESTAMPS:
         #    for word in segment.words:
         #        print(f"    [{round(word.start, 2)} -> {round(word.end, 2)}] {word.word}")
